@@ -28,6 +28,11 @@ body {
   margin: auto;
   padding: 0 20px;
 }
+button.dark{
+  border-radius: 10px;
+  height: auto;
+  text-align: center;
+}
 
 header {
   background: var(--card);
