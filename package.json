@@ -1,0 +1,25 @@
+{
+    "name": "prontix",
+    "version": "1.0.0",
+    "description": "Prontix - plataforma de venda de materiais digitais por nicho",
+    "main": "server.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "keywords": [
+        "prontix",
+        "pdf",
+        "materiais-digital",
+        "ecommerce",
+        "node",
+        "express"
+    ],
+    "author": "Prontix",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.19.2",
+        "nanoid": "^3.3.7"
+    }
+}

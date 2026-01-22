@@ -1,0 +1,28 @@
+{
+  "niches": [
+    { "id": "educacao", "name": "Educação", "desc": "Apresentações, PDFs e materiais didáticos." },
+    { "id": "juridico", "name": "Jurídico", "desc": "Agendas, trackers e modelos para rotina legal." }
+  ],
+  "products": [
+    {
+      "slug": "apresentacao-fotossintese",
+      "niche": "educacao",
+      "title": "Apresentação — Fotossíntese",
+      "shortDesc": "Slides prontos para ensino fundamental.",
+      "longDesc": "Apresentação completa com tópicos, imagens e sequência didática. Ideal para aula e revisão.",
+      "price": 9.9,
+      "previews": ["/img/previews/fotossintese-1.jpg", "/img/previews/fotossintese-2.jpg"],
+      "file": "fotossintese.zip"
+    },
+    {
+      "slug": "agenda-juridica-2026",
+      "niche": "juridico",
+      "title": "Agenda Jurídica 2026",
+      "shortDesc": "Controle de prazos e rotina do escritório.",
+      "longDesc": "Calendário, trackers e páginas úteis para organização de prazos e processos.",
+      "price": 9.9,
+      "previews": ["/img/previews/fotossintese-1.jpg"],
+      "file": "agenda-juridica-2026.zip"
+    }
+  ]
+}

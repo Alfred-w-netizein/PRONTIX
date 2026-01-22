@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title id="metaTitle">Produto | Prontix</title>
+  <meta id="metaDesc" name="description" content="Materiais prontos para usar na Prontix.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="/img/favicon.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body data-page="product">
+  <header class="topbar">
+    <a class="logo" href="/">Prontix</a>
+    <div class="top-actions">
+      <a class="link" href="javascript:history.back()">← Voltar</a>
+      <a class="btn" href="/checkout">Carrinho</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="product-hero">
+      <div class="product-left">
+        <div class="badge" id="nicheBadge">Nicho</div>
+        <h1 id="prodTitle">Produto</h1>
+        <p id="prodLong" class="muted"></p>
+
+        <div class="buybox">
+          <div>
+            <div class="muted tiny">Preço</div>
+            <div id="prodPrice" class="price">R$ 0,00</div>
+          </div>
+
+          <div class="buy-actions">
+            <button id="addCart" class="btn">Adicionar ao carrinho</button>
+            <button id="buyNow" class="btn btn-ghost">Comprar agora</button>
+          </div>
+
+          <p class="tiny muted">O arquivo completo é liberado após pagamento aprovado.</p>
+        </div>
+
+        <div class="highlights">
+          <div class="hi">
+            <div class="hi-title">Formato</div>
+            <div class="muted" id="prodFormat">PDF/ZIP</div>
+          </div>
+          <div class="hi">
+            <div class="hi-title">Entrega</div>
+            <div class="muted">Automática</div>
+          </div>
+          <div class="hi">
+            <div class="hi-title">Uso</div>
+            <div class="muted">Pessoal</div>
+          </div>
+        </div>
+
+        <p class="fineprint">Uso pessoal. Proibida revenda ou redistribuição.</p>
+      </div>
+
+      <aside class="product-right">
+        <h2 class="section-title">Prévia</h2>
+        <div id="previews" class="previews"></div>
+        <p class="tiny muted">Dica: use as prévias pra confirmar se é exatamente o que você precisa.</p>
+      </aside>
+    </section>
+
+    <section class="product-section">
+      <h2 class="section-title">O que você recebe</h2>
+      <ul id="prodWhatsIn" class="list"></ul>
+    </section>
+
+    <section class="product-section">
+      <h2 class="section-title">FAQ rápido</h2>
+      <div class="faq">
+        <details>
+          <summary>Como recebo o material?</summary>
+          <p>Após o pagamento aprovado, a página de confirmação libera o download automaticamente.</p>
+        </details>
+        <details>
+          <summary>Posso editar?</summary>
+          <p>Depende do produto. Quando houver versão editável, isso aparece na descrição e no conteúdo do ZIP.</p>
+        </details>
+        <details>
+          <summary>Tem garantia?</summary>
+          <p>Sim. Você tem 7 dias conforme o CDC.</p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

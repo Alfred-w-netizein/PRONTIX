@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Compra aprovada | Prontix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="success">
+  <header class="topbar">
+    <a class="logo" href="/">Prontix</a>
+  </header>
+
+  <main class="container">
+    <h1>Compra confirmada ✅</h1>
+    <p class="muted">Obrigado por comprar na Prontix. Seus downloads estão liberados:</p>
+
+    <div id="downloads" class="card"></div>
+
+    <div style="margin-top:16px;">
+      <a class="muted" href="/">Voltar para a home</a>
+    </div>
+  </main>
+
+  <script type="module">
+    const params = new URLSearchParams(location.search);
+    const token = params.get("token");
+    const slugs = (params.get("slugs") || "").split(",").filter(Boolean);
+
+    const box = document.getElementById("downloads");
+
+    if (!token || slugs.length === 0) {
+      box.innerHTML = `<p class="muted">Não encontramos seus downloads. Fale com o suporte.</p>`;
+    } else {
+      box.innerHTML = slugs.map(slug => `
+        <div class="row" style="margin:8px 0;">
+          <span>${slug}</span>
+          <a class="btn" href="/download?token=${encodeURIComponent(token)}&slug=${encodeURIComponent(slug)}">Baixar</a>
+        </div>
+      `).join("");
+    }
+  </script>
+</body>
+</html>
